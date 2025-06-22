@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Studia Microphones - Professional audio gear for streaming, recording, and content creation." />
+  <meta name="author" content="Thomas Sankara" />
+  <title>Studia Microphones</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="transition-colors duration-500 bg-white text-black dark:bg-black dark:text-white">
+
+  <main class="wrapper">
+    <header class="header flex items-center justify-between p-5 xl:px-0">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/header-logo.svg" alt="Studia Microphones Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="flex">
+          <li class="mx-2"><a href="#">Cameras</a></li>
+          <li><a href="#">Microphones</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="btn-cta hidden md:block">Get in Touch</button>
+        <button id="toggleDarkMode" class="border px-3 py-1 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-700">
+          Toggle Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <section class="showcase flex flex-col-reverse md:grid grid-cols-2 bg-black md:items-center text-white animate-fade-in">
+      <div class="text py-10 px-5 text-center md:text-left xl:px-20">
+        <h3 class="orange mb-10">Featured</h3>
+        <h1 class="font-bold text-4xl mb-5">Studia Streaming Mic</h1>
+        <p class="mb-5">Deliver studio-quality audio for all your streams, podcasts, and content.</p>
+        <button class="btn-showcase">Browse Microphones</button>
+      </div>
+      <div class="showcase-picture">
+        <img src="./images/hero.jpg" alt="Studia Mic Hero" class="w-full md:h-full" />
+      </div>
+    </section>
+
+    <section class="section-2 md:my-10">
+      <div class="cards relative animate-slide-up">
+        <div class="overlay">
+          <div class="img-inner"></div>
+        </div>
+        <article class="absolute bottom-5 text-center p-5 text-white">
+          <h3 class="font-bold text-3xl mb-5 uppercase">Streaming Mic</h3>
+          <p>Professional quality for every live session and broadcast.</p>
+        </article>
+      </div>
+
+      <div class="cards relative animate-slide-up">
+        <div class="overlay-1">
+          <div class="img-inner"></div>
+        </div>
+        <article class="absolute bottom-5 text-center p-5 text-white">
+          <h3 class="font-bold text-3xl mb-5 uppercase">YouTubing Mic</h3>
+          <p>Capture clear, rich sound for your next viral video.</p>
+        </article>
+      </div>
+
+      <div class="cards relative animate-slide-up">
+        <div class="overlay-2">
+          <div class="img-inner"></div>
+        </div>
+        <article class="absolute bottom-5 text-center text-white">
+          <h3 class="font-bold text-3xl mb-5 uppercase">Recording Mic</h3>
+          <p>Ideal for vocals, instruments, and professional studio sessions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured px-5 py-5 xl:px-0">
+      <h3 class="font-bold text-3xl mb-5 animate-fade-in">Featured</h3>
+      <article class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div class="featured__cards animate-slide-up">
+          <img src="./images/featured-1.jpg" alt="Camera" class="w-full" />
+          <h4 class="font-bold mt-5 mb-1 text-2xl">Camera</h4>
+          <p class="mb-5">Capture crystal-clear video quality for streaming and filming.</p>
+          <button class="btn-showcase">I want this</button>
+        </div>
+
+        <div class="featured__cards animate-slide-up">
+          <img src="./images/featured-2.jpg" alt="Microphone" class="w-full" />
+          <h4 class="font-bold mt-5 mb-1 text-2xl">Microphone</h4>
+          <p class="mb-5">Achieve studio-level clarity with our premium microphones.</p>
+          <button class="btn-showcase">I want this</button>
+        </div>
+
+        <div class="featured__cards animate-slide-up">
+          <img src="./images/featured-3.jpg" alt="Stream Deck" class="w-full" />
+          <h4 class="font-bold mt-5 mb-1 text-2xl">Stream Deck</h4>
+          <p class="mb-5">Boost productivity with one-touch stream control and automation.</p>
+          <button class="btn-showcase">I want this</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="py-10 md:grid grid-cols-2 items-center md:px-5 xl:px-0 animate-fade-in">
+      <div>
+        <img src="./images/get-yours.jpg" alt="Get Yours Today" />
+      </div>
+      <div class="px-5">
+        <h3 class="font-bold text-3xl mt-5 mb-1">Get Yours Today</h3>
+        <p class="mb-5">High-quality gear is just a click away. Join the Studia community.</p>
+        <button class="btn-showcase">Buy</button>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 dark:bg-gray-900 p-10 text-center animate-fade-in">
+      <h3 class="text-2xl font-bold mb-3">Need help or have questions?</h3>
+      <p class="mb-3">We're here to assist you. Reach out to us anytime.</p>
+      <p class="text-lg font-medium">
+        📧 <a href="mailto:roshanmehta181@gmail.com" class="text-blue-600 dark:text-yellow-400 hover:underline">roshanmehta181@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer bg-black text-white">
+    <div class="footer-inner flex flex-col items-center justify-center p-5 text-center md:flex-row md:justify-between md:p-10 xl:px-0">
+      <div class="logo mb-5 md:mb-0">
+        <img src="./images/footer-logo.svg" alt="Studia Footer Logo" />
+      </div>
+
+      <nav class="mb-5 md:mb-0">
+        <ul class="md:flex">
+          <li class="my-1 md:my-0 md:mx-2"><a href="#">Camera</a></li>
+          <li class="my-1 md:my-0 md:mx-2"><a href="#">Microphone</a></li>
+        </ul>
+      </nav>
+
+      <div class="text-center">
+        <p class="mb-2">📧 Contact: <a href="mailto:roshanmehta181@gmail.com" class="underline hover:text-yellow-400">roshanmehta181@gmail.com</a></p>
+        <button class="btn-cta">Get In Touch</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
